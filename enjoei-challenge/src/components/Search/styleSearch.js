@@ -6,13 +6,22 @@ export const SearchArea = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-`
+
+  @media (max-width: 768px) {
+    margin: 1em 2em;
+  }
+`;
 
 export const FoundProductsNumber = styled.p`
   font-family: 'Poppins', sans-serif;
   font-size: 10pt;
   font-weight: 900;
-`
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+`;
 
 export const SearchBarContainer = styled.div`
   width: 20%;
@@ -23,6 +32,12 @@ export const SearchBarContainer = styled.div`
   border-radius: 4px;
   padding: 0.6%;
   background-color: white;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 75%;
+    padding: 0 4%;
+  }
 `;
 
 export const SearchInput = styled.input`
@@ -41,9 +56,12 @@ export const Placeholder = styled.span`
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   opacity: 0.5;
-  padding-left: 3%;
 `;
 
 export const SearchIcon = styled.img`
   width: 10%;
-`
+
+  @media (max-width: 768px) {
+    width: 7%;
+  }
+`;
