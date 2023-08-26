@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "../assets/images/anel_cachorrinho.jpg",
+      "oldPrice": 300,
+      "newPrice": 200,
+      "category": "Acessórios"
+    },
+    {
+      "id": 2,
+      "image": "../assets/images/broche_frida_kahlo.jpg",
+      "oldPrice": "",
+      "newPrice": 234,
+      "category": "Acessórios"
+    },
+    {
+      "id": 3,
+      "image": "../assets/images/vestido_viscose.jpeg",
+      "oldPrice": "",
+      "newPrice": 200,
+      "category": "Roupas"
+    },
+    {
+      "id": 4,
+      "image": "../assets/images/polo.png",
+      "oldPrice": "",
+      "newPrice": 234,
+      "category": "Roupas"
+    },
+    {
+      "id": 5,
+      "image": "../assets/images/jardineira_vermelha.jpg",
+      "oldPrice": 300,
+      "category": "Roupas"
+    },
+    {
+      "id": 6,
+      "image": "../assets/images/vestido_pedra_infinita.jpg",
+      "oldPrice": 300,
+      "newPrice": 200,
+      "category": "Roupas"
+    },
+    {
+      "id": 7,
+      "image": "../assets/images/vestido_rodado.jpg",
+      "oldPrice": "",
+      "newPrice": 234,
+      "category": "Roupas"
+    },
+    {
+      "id": 8,
+      "image": "../assets/images/rasteira.jpg",
+      "oldPrice": 300,
+      "newPrice": 200,
+      "category": "Calçados"
+    },
+    {
+      "id": 9,
+      "image": "../assets/images/broche_cacto.jpg",
+      "oldPrice": "",
+      "newPrice": 234,
+      "category": "Acessórios"
+    },
+    {
+      "id": 10,
+      "image": "../assets/images/vestido_renda.jpg",
+      "oldPrice": 300,
+      "newPrice": 200,
+      "category": "Roupas"
+    }
+
+  ]
+}
