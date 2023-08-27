@@ -6,7 +6,6 @@ import {
   ProductImage,
   Grid
 } from './styleProductGrid';
-import vestido_zinzane from '../../assets/images/vestido_zinzane.jpg';
 
 const ProductGrid = ({ searchedProduct }) => { 
 
@@ -23,12 +22,12 @@ const ProductGrid = ({ searchedProduct }) => {
     };
 
     fetchData();
-  }, []); 
+  }, []);
 
+  //Product Grid será re-renderizado quando detectar alguma mudança em searchedProduct
   const filteredProducts = products.filter(product =>
     product.name.toLowerCase().includes(searchedProduct.toLowerCase())
   );
-  console.log(searchedProduct);
 
   return (
     <Grid>
