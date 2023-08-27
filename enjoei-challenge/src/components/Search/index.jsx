@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import {
   SearchArea,
   FoundProductsNumber,
@@ -10,6 +10,9 @@ import {
 import Icon from '../../assets/images/icon.png'
 
 const Search = () => {
+  const [searchResults, setSearchResults] = useState([]);
+
+  
   return (
     <Fragment>
       <SearchArea>

@@ -1,14 +1,18 @@
-import { Fragment } from 'react'
+import React, { useState } from 'react';
 import Header from './components/Header';
 import Search from './components/Search';
+import ProductGrid from './components/ProductGrid';
 
 const App = () => {
+  const [searchedProduct, setSearchedProduct] = useState('');
+
   return (
-    <Fragment>
+    <div>
       <Header />
-      <Search />
-    </Fragment>
-  )
+      <Search onSearch={setSearchedProduct} />
+      <ProductGrid searchedProduct={searchedProduct} />
+    </div>
+  );
 }
 
 export default App;
