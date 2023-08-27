@@ -5,11 +5,15 @@ import ProductGrid from './components/ProductGrid';
 
 const App = () => {
   const [searchedProduct, setSearchedProduct] = useState('');
+  
+  const handleEnterKeyPress = (query) => {
+    setSearchedProduct(query);
+  };
 
   return (
     <div>
       <Header />
-      <Search onSearch={setSearchedProduct} />
+      <Search onEnterKeyPress={handleEnterKeyPress} />
       <ProductGrid searchedProduct={searchedProduct} />
     </div>
   );
