@@ -48,7 +48,7 @@ const ProductGrid = ({ searchedProduct, onClearSearch }) => {
                   33% off
                 </DiscountTag>
               )}
-              <ProductImage src={product.image} alt="" />
+              <ProductImage src={product.image} alt={product.name} />
               <PriceTag hasoldPrice={product.oldPrice}>
                 {` R$ ${product.newPrice}`}
                 {product.oldPrice && (
@@ -62,7 +62,7 @@ const ProductGrid = ({ searchedProduct, onClearSearch }) => {
         filteredProducts.map((product, index) => (
           <ProductItem key={index}>
             <ImageWrapper>
-              <ProductImage src={product.image} alt="" />
+              <ProductImage src={product.image} alt={product.name} />
             </ImageWrapper>
           </ProductItem>
         ))
