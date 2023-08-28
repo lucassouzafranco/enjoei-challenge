@@ -6,8 +6,9 @@ O objetivo principal do projeto é construir uma aplicação com algumas das pri
 
 ## 💼 Regras de Negócio
 
-O aplicativo deve exibir e sinalizar ao usuário produtos que estejam em promoção através de tags com a porcentagem de desconto, valor atual e anterior do produto. 
 ![pricetags](https://github.com/lucassouzafranco/enjoei-challenge/blob/main/pricetags.png)
+
+O aplicativo deve exibir e sinalizar ao usuário produtos que estejam em promoção através de tags com a porcentagem de desconto, valor atual e anterior do produto.
 
 ## ✨ Decisões Tomadas
 
@@ -33,8 +34,6 @@ Durante o desenvolvimento do projeto, foram tomadas algumas decisões importante
 ### 3. Criação do projeto com Vite:
    - O Vite é um bundler e build tool que se destaca por sua abordagem de desenvolvimento rápido e configuração minimalista.
    - A decisão de criar o projeto utilizando a ferramenta Vite foi motivada pela busca por uma configuração de desenvolvimento moderna, eficiente e que proporcionasse um processo de construção de aplicativos React mais ágil e performático. Com a combinação do Vite e do React, conseguimos criar um fluxo de trabalho eficiente para desenvolvimento e construção, resultando em uma aplicação mais performática e uma experiência de desenvolvimento mais fluida.
-     ![toast](https://github.com/lucassouzafranco/desafio-frontend-oliveira-trust/blob/master/toastfy.gif)
-
 
 
 ## 📚 Organização do Código
@@ -64,6 +63,12 @@ Dentro da pasta src, encontramos a pasta que contém os componentes da aplicaç�
 
 ## 💻 Instruções de Instalação e de Uso
 
+Clone o projeto para fazer download do repositório:
+
+```bash
+git clone https://github.com/lucassouzafranco/enjoei-challenge.git
+```
+
 Para começar a usar o servidor JSON localmente, você precisa ter o `json-server` instalado em seu ambiente de desenvolvimento. Caso ainda não tenha, você pode instalá-lo usando o seguinte comando no terminal:
 
 ```bash
@@ -89,9 +94,7 @@ Após ter a API em execução, você pode prosseguir com a execução da aplica�
 npm run dev
 ```
 
-A aplicação em React.js no endereço:
-
-http://localhost:5173
+O Vite direciona a aplicação em React.js para o endereço: http://localhost:5173
 
 
 ## 🤴🏾 Autor
