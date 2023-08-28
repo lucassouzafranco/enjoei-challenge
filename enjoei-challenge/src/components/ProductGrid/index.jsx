@@ -4,10 +4,13 @@ import {
   ProductItem,
   ImageWrapper,
   ProductImage,
-  Grid
+  Grid,
+  PriceTag,
+  OldPrice,
+  DiscountTag
 } from './styleProductGrid';
 
-const ProductGrid = ({ searchedProduct }) => { 
+const ProductGrid = ({ searchedProduct }) => {
 
   const [products, setProducts] = useState([]);
 
@@ -35,7 +38,18 @@ const ProductGrid = ({ searchedProduct }) => {
         products.map((product, index) => (
           <ProductItem key={index}>
             <ImageWrapper>
+              {product.oldPrice !== '' &&
+                <DiscountTag>
+                  33% off
+                </DiscountTag>
+              }
               <ProductImage src={product.image} alt="" />
+              <PriceTag hasOldPrice={product.oldPrice}>
+                {` R$ ${product.newPrice}`}
+                {product.oldPrice && (
+                  <OldPrice>{`R$ ${product.oldPrice}`}</OldPrice>
+                )}
+              </PriceTag>
             </ImageWrapper>
           </ProductItem>
         ))

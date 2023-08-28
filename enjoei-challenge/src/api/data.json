@@ -37,6 +37,7 @@
       "image": "src/assets/images/jardineira_vermelha.jpg",
       "name": "jardineira vermelha",
       "oldPrice": 300,
+      "newPrice": 200,
       "category": "Roupas"
     },
     {
