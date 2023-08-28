@@ -11,7 +11,7 @@ const Header = () => {
     <Fragment>
       <HeaderArea>
         <Centralize>
-          <Image src={logo} />
+          <Image src={logo} alt="logotipo da Enjoei"/>
         </Centralize>
       </HeaderArea>
     </Fragment>

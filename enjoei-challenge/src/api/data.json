@@ -1,0 +1,85 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "src/assets/images/anel_cachorrinho.jpg",
+      "name": "anel cachorrinho",
+      "oldPrice": 300,
+      "newPrice": 200,
+      "category": "Acessórios"
+    },
+    {
+      "id": 2,
+      "image": "src/assets/images/broche_frida_kahlo.jpg",
+      "name": "broche frida kahlo",
+      "oldPrice": "",
+      "newPrice": 234,
+      "category": "Acessórios"
+    },
+    {
+      "id": 3,
+      "image": "src/assets/images/vestido_viscose.jpeg",
+      "name": "vestido viscose",
+      "oldPrice": "",
+      "newPrice": 200,
+      "category": "Roupas"
+    },
+    {
+      "id": 4,
+      "image": "src/assets/images/polo.png",
+      "name": "polo",
+      "oldPrice": "",
+      "newPrice": 234,
+      "category": "Roupas"
+    },
+    {
+      "id": 5,
+      "image": "src/assets/images/jardineira_vermelha.jpg",
+      "name": "jardineira vermelha",
+      "oldPrice": 300,
+      "newPrice": 200,
+      "category": "Roupas"
+    },
+    {
+      "id": 6,
+      "image": "src/assets/images/vestido_pedra_infinita.jpg",
+      "name": "vestido pedra infinita",
+      "oldPrice": 300,
+      "newPrice": 200,
+      "category": "Roupas"
+    },
+    {
+      "id": 7,
+      "image": "src/assets/images/vestido_rodado.jpg",
+      "name": "vestido rodado",
+      "oldPrice": "",
+      "newPrice": 234,
+      "category": "Roupas"
+    },
+    {
+      "id": 8,
+      "image": "src/assets/images/rasteira.jpg",
+      "name": "rasteira",
+      "oldPrice": 300,
+      "newPrice": 200,
+      "category": "Calçados"
+    },
+    {
+      "id": 9,
+      "image": "src/assets/images/broche_cacto.jpg",
+      "name": "broche cacto",
+      "oldPrice": "",
+      "newPrice": 234,
+      "category": "Acessórios"
+    },
+    {
+      "id": 10,
+      "image": "src/assets/images/vestido_renda.jpg",
+      "name": "vestido renda",
+      "oldPrice": 300,
+      "newPrice": 200,
+      "category": "Roupas"
+    }
+
+  ]
+}
