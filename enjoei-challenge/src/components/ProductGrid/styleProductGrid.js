@@ -1,9 +1,14 @@
-import {styled} from 'styled-components';
+import styled from 'styled-components';
 
 export const Grid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0 3em;
+  @media (max-width: 768px) {
+    justify-content: center;
+    margin: 0%;
+  }
 `;
 
 export const ProductItem = styled.div`
@@ -30,9 +35,14 @@ export const DiscountTag = styled.div`
 export const ImageWrapper = styled.div`
   position: relative;
   overflow: hidden;
-  height: 31vh;
-  width: 86%;
+  height: 30vh;
+  width: 16vw;
   border-radius: 3px;
+  @media (max-width: 768px) {
+    width: 44vw;
+    height: 20vh;
+    margin: 0em 0.5em;
+  }
 `;
 
 export const ProductImage = styled.img`
@@ -61,9 +71,9 @@ export const PriceTag = styled.div`
 `;
 
 export const OldPrice = styled.span`
-  color: gray; /* Define a cor para o preço antigo */
-  text-decoration: line-through; /* Tacha o texto do preço antigo */
-  margin-right: 0.5em; /* Espaçamento entre o preço antigo e o novo */
+  color: gray;
+  text-decoration: line-through;
+  margin-right: 0.5em;
   font-weight: 200;
   margin-left: 0.5em;
 `;

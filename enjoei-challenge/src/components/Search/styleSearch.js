@@ -2,11 +2,14 @@ import {styled} from 'styled-components';
 
 export const SearchArea = styled.div` 
   height: 8vh;
-  width: 90vw;
-  margin: 0.5em 3em;
+  margin: 0 3em;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    margin: 0 1em;
+  }
 `;
 
 export const FoundProductsNumber = styled.p`
