@@ -5,6 +5,10 @@ export const ButtonsArea = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 768px) {
+    width: 100vw;
+  } 
 `;
 
 export const Buttons = styled.div`
