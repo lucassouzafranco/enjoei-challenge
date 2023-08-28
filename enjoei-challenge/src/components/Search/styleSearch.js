@@ -23,19 +23,49 @@ export const FoundProductsNumber = styled.p`
   }
 `;
 
+export const ClearFilter = styled.button`
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  width: 14vw;
+  text-align: center;
+  color: #f5899e;
+  font-weight: 600;
+  visibility: ${props => (props.isVisible ? 'visible' : 'hidden')};
+  opacity: ${props => (props.isVisible ? 1 : 0)};
+  transition: visibility 0s, opacity 0.5s;
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+
 export const SearchBarContainer = styled.div`
-  width: 20%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  width: 25%;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    width: 100vw;
+  }
+
+`;
+export const SearchBar = styled.div`
+  display: flex;
+  align-items: center;
   border: 1px solid #F1EEEC;
   border-radius: 4px;
-  padding: 0.6%;
+  padding: 2%;
   background-color: white;
+  width: 100%;
 
   @media (max-width: 768px) {
     width: 100%;
-    height: 75%;
+    height: 6vh;
     padding: 0 4%;
   }
 `;

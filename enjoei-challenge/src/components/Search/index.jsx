@@ -2,10 +2,12 @@ import React, { Fragment, useState } from 'react'
 import {
   SearchArea,
   FoundProductsNumber,
-  SearchBarContainer,
+  SearchBar,
   Placeholder,
   SearchInput,
-  SearchIcon
+  SearchIcon,
+  ClearFilter,
+  SearchBarContainer
 } from './styleSearch';
 import Icon from '../../assets/images/icon.png'
 
@@ -15,6 +17,11 @@ const Search = ({ onEnterKeyPress }) => {
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
   };
+
+  const handleResetFilter = (event) => {
+    setInputValue('');
+    onEnterKeyPress('');
+  }
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
@@ -31,14 +38,17 @@ const Search = ({ onEnterKeyPress }) => {
       <SearchArea>
         <FoundProductsNumber>977 produtos encontrados</FoundProductsNumber>
         <SearchBarContainer>
-          <Placeholder>buscar</Placeholder>
-          <SearchInput
-            type="text"
-            value={inputValue}
-            onChange={handleInputChange}
-            onKeyDown={handleKeyDown}
-          />
-          <SearchIcon src={Icon} />
+          <ClearFilter isvisible={inputValue.trim() !== ''} onClick={handleResetFilter}>limpar busca</ClearFilter>
+          <SearchBar>
+            <Placeholder>buscar</Placeholder>
+            <SearchInput
+              type="text"
+              value={inputValue}
+              onChange={handleInputChange}
+              onKeyDown={handleKeyDown}
+            />
+            <SearchIcon src={Icon} />
+          </SearchBar>
         </SearchBarContainer>
       </SearchArea>
     </Fragment>
