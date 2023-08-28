@@ -17,6 +17,7 @@ export const FoundProductsNumber = styled.p`
   font-size: 10pt;
   font-weight: 900;
   display: none;
+  color: ${props => (props.isVisible ? 'black' : 'white')};
 
   @media (min-width: 768px) {
     display: block;
@@ -30,8 +31,8 @@ export const ClearFilter = styled.button`
   text-align: center;
   color: #f5899e;
   font-weight: 600;
-  visibility: ${props => (props.isVisible ? 'visible' : 'hidden')};
-  opacity: ${props => (props.isVisible ? 1 : 0)};
+  visibility: ${props => (props.isvisible ? 'visible' : 'hidden')};
+  opacity: ${props => (props.isvisible ? 1 : 0)};
   transition: visibility 0s, opacity 0.5s;
   background-color: transparent;
   border-style: none;

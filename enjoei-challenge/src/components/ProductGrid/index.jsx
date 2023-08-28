@@ -9,8 +9,10 @@ import {
   OldPrice,
   DiscountTag
 } from './styleProductGrid';
+import ProductNotFound from '../ProductNotFound';
+import Pagination from '../Pagination';
 
-const ProductGrid = ({ searchedProduct }) => {
+const ProductGrid = ({ searchedProduct, onClearSearch }) => {
 
   const [products, setProducts] = useState([]);
 
@@ -32,19 +34,22 @@ const ProductGrid = ({ searchedProduct }) => {
     product.name.toLowerCase().includes(searchedProduct.toLowerCase())
   );
 
+  // Verifica se há um termo de pesquisa e se não há produtos correspondentes a esse termo.
+  const isProductNotFoundVisible = searchedProduct !== '' && filteredProducts.length === 0;
+
   return (
     <Grid>
-      {searchedProduct === '' ?
+      {searchedProduct === '' && products.length > 0 ? (
         products.map((product, index) => (
           <ProductItem key={index}>
             <ImageWrapper>
-              {product.oldPrice !== '' &&
+              {product.oldPrice !== '' && (
                 <DiscountTag>
                   33% off
                 </DiscountTag>
-              }
+              )}
               <ProductImage src={product.image} alt="" />
-              <PriceTag hasOldPrice={product.oldPrice}>
+              <PriceTag hasoldPrice={product.oldPrice}>
                 {` R$ ${product.newPrice}`}
                 {product.oldPrice && (
                   <OldPrice>{`R$ ${product.oldPrice}`}</OldPrice>
@@ -53,7 +58,7 @@ const ProductGrid = ({ searchedProduct }) => {
             </ImageWrapper>
           </ProductItem>
         ))
-        :
+      ) : searchedProduct !== '' && filteredProducts.length > 0 ? (
         filteredProducts.map((product, index) => (
           <ProductItem key={index}>
             <ImageWrapper>
@@ -61,7 +66,11 @@ const ProductGrid = ({ searchedProduct }) => {
             </ImageWrapper>
           </ProductItem>
         ))
-      }
+      ) : (
+        <ProductNotFound onClearSearch={onClearSearch} />
+      )}
+      
+      {!isProductNotFoundVisible && <Pagination />}
     </Grid>
   );
 }

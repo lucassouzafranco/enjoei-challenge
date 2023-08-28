@@ -11,12 +11,15 @@ const App = () => {
     setSearchedProduct(query);
   };
 
+  const handleClearSearch = () => {
+    setSearchedProduct('');
+  };
+
   return (
     <div>
       <Header />
       <Search onEnterKeyPress={handleEnterKeyPress} />
-      <ProductGrid searchedProduct={searchedProduct} />
-      <Pagination />
+      <ProductGrid searchedProduct={searchedProduct} onClearSearch={handleClearSearch} />
     </div>
   );
 }

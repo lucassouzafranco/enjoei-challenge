@@ -36,7 +36,9 @@ const Search = ({ onEnterKeyPress }) => {
   return (
     <Fragment>
       <SearchArea>
-        <FoundProductsNumber>977 produtos encontrados</FoundProductsNumber>
+        <FoundProductsNumber isVisible={inputValue.trim() === ''}>
+        10 produtos encontrados
+        </FoundProductsNumber>
         <SearchBarContainer>
           <ClearFilter isvisible={inputValue.trim() !== ''} onClick={handleResetFilter}>limpar busca</ClearFilter>
           <SearchBar>
